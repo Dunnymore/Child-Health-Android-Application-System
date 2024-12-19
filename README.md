@@ -91,7 +91,7 @@ Contact
 For questions, support, or feedback:  
 - Developer: Dunnymore  
 - Email: mwandun0@email.com  
-- GitHub:(https://github.com/Dunnymore/Childhealth-application-system/tree/main)  
+- GitHub:(https://github.com/Dunnymore/Child-Health-Android-Application-System.git)  
 
 ---
 
