@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="layoutLogin" type="id" />
+    <item name="editTextRegUsername" type="id" />
+    <item name="editTextRegEmail" type="id" />
+    <item name="editTextRegPassword" type="id" />
+    <item name="buttonRegister" type="id" />
+    <item name="et_username" type="id" />
+    <item name="et_password" type="id" />
+    <item name="baby_details_layout" type="id" />
+    <item name="baby_details_text_view" type="id" />
+    <item name="vaccineListView" type="id" />
+    <item name="listView" type="id" />
+</resources>

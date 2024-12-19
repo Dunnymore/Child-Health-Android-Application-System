@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Watermark Image -->
+    <ImageView
+        android:id="@+id/backgroundImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bb"
+        android:scaleType="fitXY"
+        android:alpha="0.3" /> <!-- Set the alpha value for opacity -->
+
+    <!-- Layout for your content -->
+    <RelativeLayout
+        android:id="@+id/contentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@android:color/transparent"> <!-- Set transparent background -->
+
+        <!-- Your existing content here -->
+        <!-- Title TextView -->
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="KEEP YOUR CHILD HEALTH SAFE"
+            android:textSize="24sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Vaccination Reminder Section -->
+        <TextView
+            android:id="@+id/vaccinationTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All the Vaccination for a child"
+            android:textSize="20sp"
+            android:layout_below="@id/titleTextView"
+            android:layout_marginTop="32dp"
+            android:layout_centerHorizontal="true"/>
+
+        <!-- Button to Navigate to Vaccination Home Page -->
+        <Button
+            android:id="@+id/addVaccinationReminderButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vaccination"
+            android:layout_below="@id/vaccinationTitleTextView"
+            android:layout_marginTop="16dp"
+            android:layout_centerHorizontal="true"/>
+
+        <!-- Doctor Appointment Section -->
+        <TextView
+            android:id="@+id/doctorTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Doctor Appointments"
+            android:textSize="20sp"
+            android:layout_below="@id/addVaccinationReminderButton"
+            android:layout_marginTop="32dp"
+            android:layout_centerHorizontal="true"/>
+
+        <!-- Button to Navigate to Doctor Appointment Home Page -->
+        <Button
+            android:id="@+id/addDoctorAppointmentButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Doctor Appointment"
+            android:layout_below="@id/doctorTitleTextView"
+            android:layout_marginTop="16dp"
+            android:layout_centerHorizontal="true"/>
+
+        <!-- Medication Reminder Section -->
+        <TextView
+            android:id="@+id/medicationTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Child Medication"
+            android:textSize="20sp"
+            android:layout_below="@id/addDoctorAppointmentButton"
+            android:layout_marginTop="32dp"
+            android:layout_centerHorizontal="true"/>
+
+        <!-- Button to Navigate to Medication Reminder Home Page -->
+        <Button
+            android:id="@+id/addMedicationReminderButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medication"
+            android:layout_below="@id/medicationTitleTextView"
+            android:layout_marginTop="16dp"
+            android:layout_centerHorizontal="true"/>
+
+        <!-- Select Date and Time Section -->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp">
+
+            <TextView
+                android:id="@+id/textViewDateTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reminder Date &amp; Time"
+                android:textSize="18sp"
+                android:layout_alignParentEnd="true"/>
+
+            <Button
+                android:id="@+id/buttonPickDateTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Set Date &amp; Time"
+                android:layout_below="@id/textViewDateTime"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="60dp"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

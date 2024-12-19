@@ -1,0 +1,121 @@
+<!-- activity_medication.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/backgroundImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/nn"
+        android:scaleType="fitXY"
+        android:alpha="0.3" /> <!-- Set the alpha value for opacity -->
+
+    <!-- TextView for Welcome message -->
+    <TextView
+        android:id="@+id/welcomeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WELCOME TO IMMUNIZATION CENTER"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"/>
+
+    <!-- Icon -->
+    <ImageView
+        android:id="@+id/iconImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cc"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/welcomeTextView"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"/>
+
+    <!-- TextView for IMMUNIZATION -->
+    <TextView
+        android:id="@+id/immunizationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IMMUNIZATION"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_below="@id/iconImageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <!-- New TextView for additional information -->
+    <TextView
+        android:id="@+id/additionalInfoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Know about immunization, importance of immunization for children and immunization time table. A self-learning app for immunization."
+        android:textSize="18sp"
+        android:layout_below="@id/immunizationTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center"/>
+
+    <!-- Existing TextViews -->
+    <TextView
+        android:id="@+id/immunizationKnowledgeTextView"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="Immunization Knowledge"
+        android:textSize="24sp"
+        android:layout_below="@id/additionalInfoTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/light_blue"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/immunizationTimeTableTextView"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="Immunization Time Table"
+        android:textSize="24sp"
+        android:layout_below="@id/immunizationKnowledgeTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/light_blue"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/aboutUsTextView"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="About Us"
+        android:textSize="24sp"
+        android:layout_below="@id/immunizationTimeTableTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/light_blue"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"/>
+
+</RelativeLayout>
